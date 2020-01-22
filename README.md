@@ -24,3 +24,7 @@ white board image :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/binaryArr.JPG
 
 
+
+
+## Code Challenge: Class 04 - Fib & Summing
+
