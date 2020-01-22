@@ -1,0 +1,29 @@
+{
+  "name": "arrayshift",
+  "version": "1.0.0",
+  "description": "<!-- Short summary or background information --> Write a function which takes in an array and the value  return an array with the new value added at the middle index .",
+  "main": "array-shift.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'",
+    "start": "node index.js"
+
+  },
+  "author": "abdulrhman",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0"
+  }
+}
