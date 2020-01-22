@@ -8,3 +8,19 @@ https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/
 
 white board image :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/arrayShift.JPG
+
+
+
+
+## Code Challenge: Class 03 - BinarySearch 
+Binary search in a sorted 1D array
+
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/pull/2
+
+
+white board image :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/binaryArr.JPG
+
+
