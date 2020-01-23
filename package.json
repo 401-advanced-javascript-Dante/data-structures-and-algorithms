@@ -10,7 +10,6 @@
     "test": "jest --verbose --coverage",
     "lint": "eslint '**/*.js'",
     "start": "node index.js"
-
   },
   "author": "abdulrhman",
   "license": "ISC",
