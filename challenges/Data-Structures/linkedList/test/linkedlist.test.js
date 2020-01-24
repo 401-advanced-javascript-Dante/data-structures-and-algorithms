@@ -25,15 +25,23 @@ describe('Linked-List Test' , () => {
 
   it('Can properly insert multiple nodes into the linked list' , () => {
     let list = new LL() ; 
-    console.log('befor', list);
+    // console.log('befor', list);
     list.insert('test1');
     // list.insert('test2');
-    console.log('after' ,list);
-    console.log('next' ,list.head.next);
-
-
+    // console.log('after' ,list);
+    // console.log('next' ,list.head.next);
     expect(list.head.name).toEqual('test1');
   });
 
+  it('Will return true when finding a value within the linked list that exists', ()=> {
+    let list = new LL() ; 
+    list.insert('test1');
+    expect(list.include('test1')).toBeTruthy() ;
+  });
 
+  // it('Will return false when searching for a value in the linked list that does not exist', ()=> {
+  //   let list1 = new LL() ; 
+  //   list1.insert();
+  //   expect(list1.include('test2')).toBeFalsy() ;
+  // });
 });

@@ -15,4 +15,6 @@ i approched a methode that adding the value in the middle of the array without u
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![](../../assets/arrayShift.JPG)
+
 following the whiteboard , using for loop and create a new array bigger than the one you input by 1  , start adding values to the new array until we reach the middle and stop by adding the new value there , then adding what values left in the first array . 

@@ -5,8 +5,9 @@ Insert and shift an array in middle at index
 
 branch link :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/array-shift
+
 white board image :
-https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/arrayShift.JPG
+![](assets/arrayShift.JPG)
 
 
 
@@ -19,7 +20,7 @@ branch link :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/array-binary-search
 
 white board image :
-https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/binaryArr.JPG
+![](assets/binaryArr.JPG)
 
 
 
@@ -32,6 +33,16 @@ https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/
 
 
 white board image :
-https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/fibo.JPG
+![](assets/fibo.JPG)
+![](assets/summ.JPG)
 
-https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/blob/master/assets/summ.jpg
+
+
+## Code Challenge: Class 05 - Linkid List
+Fibo & Summing array of arrays
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/linked-list
+
+white board image :
+![](assets/linkedlist.JPG)
