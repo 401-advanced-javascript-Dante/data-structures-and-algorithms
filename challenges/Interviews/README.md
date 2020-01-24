@@ -15,8 +15,13 @@ i approched a methode that adding the value in the middle of the array without u
 
 ## Solution
 <!-- Embedded whiteboard image -->
+
+![](../../assets/fibo.JPG)
+![](../../assets/summ.jpg)
+
+
 summing function :
-following the whiteboard , using for loop and create a new array , adding values of the sum for each one to the new array .
+following the whiteboard , using for loop and create a new array , adding values of the sum for each one to the new array.
 
 fibo function :
 following the whiteboard , using a while loop to made a fibo series until we reach the index that we insert it as an input then give the value of it .

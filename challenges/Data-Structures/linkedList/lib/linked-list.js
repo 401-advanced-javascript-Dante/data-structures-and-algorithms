@@ -2,9 +2,9 @@
 
 // const Node = require
 
-function Node (value){
-  this.name = value ;
-  this.next = null ;
+function Node(value) {
+  this.name = value;
+  this.next = null;
 }
 
 
@@ -16,24 +16,49 @@ class LinkedList {
 
   insert(value) {
     let node = new Node(value);
-    // console.log(this.head);
-    
     if (!this.head) {
       this.head = node;
     }
-    
-    let pointer = this.head ;
-    // console.log(pointer);
+    // { name : test1 , next = null }
 
-    while(pointer.next){
-      pointer = pointer.next ;
-      // console.log('hii');
+    let pointer = this.head;
+    console.log(pointer);
+    console.log(pointer.next);
+    while (pointer.next) {
+      pointer = pointer.next;
     }
-    // console.log(pointer);
+    console.log(node);
+    pointer.next = node;
+    console.log(pointer.next);
+    console.log(pointer.next.next);
+    console.log(pointer.next.next.next);
+    console.log(pointer.next.next.next.next);
 
-    pointer.next = node ;
-    return this ;
+    return this;
   }
+
+
+   
+
+
+  include(value){
+
+    let pointer = this.head;
+    while (pointer.next) {
+      if(pointer.next.name === value){
+        return true ;
+      }
+      pointer = pointer.next;
+    }
+
+    return false ;
+  }
+
+
+
+
+
+
 }
 
-module.exports= LinkedList ;
+module.exports = LinkedList;

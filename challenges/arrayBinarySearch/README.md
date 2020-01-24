@@ -15,5 +15,7 @@ i approched a methode using for loop and if statement , that loop in the array a
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![](../../assets/binaryArr.JPG)
+
 following the whiteboard , using for loop and if statement , that loop in the array and if the array have the value it will stop and return the index of it , if not return -1 ;
 
