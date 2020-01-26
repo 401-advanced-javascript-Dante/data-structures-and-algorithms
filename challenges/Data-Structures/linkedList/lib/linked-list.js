@@ -75,6 +75,66 @@ class LinkedList {
 
 
 
+  append(value){
+    let node = new Node(value) ;
+
+    let pointer = this.head ;
+    while(pointer.next){
+      pointer = pointer.next ;
+    }
+
+    pointer.next = node ;
+    return this ;
+  }
+
+
+  insertBefore(value, newVal){
+
+    let node = new Node(newVal);
+
+    let pointer = this.head ;
+    if(pointer.name === value){
+      this.head= node ;
+      this.head.next = pointer;
+      return this;
+    }
+
+    while(pointer.next){
+      var previousP = pointer.next ;
+      if(pointer.next.name === value){
+        pointer.next = node ;
+      }
+      pointer = pointer.next ;
+    }
+    pointer.next = previousP;
+    return this ;
+  }
+
+
+
+  insertAfter(value, newVal){
+    let node = new Node(newVal);
+    let pointer = this.head ;
+    let afterP ;
+    let previousP ;
+
+  
+    while(pointer.next){
+
+      if(pointer.name === value){
+        afterP = pointer.next;
+        pointer.next= node ;
+      }
+      previousP = pointer;
+      pointer = pointer.next;
+    }
+    if(pointer.next){
+      pointer.next = afterP ;
+    }else{
+      previousP.next.next= node;
+    }
+  }
+
 }
 
 module.exports = LinkedList;
