@@ -135,6 +135,49 @@ class LinkedList {
     }
   }
 
+
+  kthFromEnd(k){
+
+    if(k <= 0 ){
+      return 'negative numbers rejected'
+    }
+
+    let pointer = this.head ;
+    let length = 0 ;
+    while(pointer.next){
+      pointer = pointer.next ;
+      length ++ ;
+    }
+
+    console.log('length: ' , length);
+    
+    let target = length - k ;
+
+    console.log('target: ', target);
+    console.log('the list: ', this)
+    console.log('the list: ', this.head)
+
+    let counter = 0 ;
+
+    let newPointer = this.head;
+    while(newPointer.next){
+      newPointer = newPointer.next ;
+      counter++
+      if(counter === target){
+        return newPointer.name;
+      }
+    }
+
+    
+
+
+    return 'Exception';
+
+
+  }
+
 }
+
+
 
 module.exports = LinkedList;

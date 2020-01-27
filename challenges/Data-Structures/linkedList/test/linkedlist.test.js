@@ -122,6 +122,64 @@ describe('Linked-List Test' , () => {
   });
 
 
+  it('Where k is greater than the length of the linked list', () => {
+    let list = new LL() ;
+    list.insert(1);
+    list.insert(3);
+    list.insert(8);
+    list.insert(2);
+
+    expect(list.kthFromEnd(6)).toEqual('Exception');
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    let list = new LL() ;
+    list.insert(1);
+    list.insert(3);
+    list.insert(8);
+    list.insert(2);
+
+    expect(list.kthFromEnd(4)).toEqual('Exception');
+  });
+
+
+  it('Where k is not a positive integer', () => {
+    let list = new LL() ;
+    list.insert(1);
+    list.insert(3);
+    list.insert(8);
+    list.insert(2);
+
+    expect(list.kthFromEnd(-4)).toEqual('negative numbers rejected');
+  });
+
+  it('Where k is not a positive integer', () => {
+    let list = new LL() ;
+    list.insert(1);
+    expect(list.kthFromEnd(2)).toEqual('Exception');
+  });
+
+  it('where k is not at the end, but somewhere in the middle of the linked list', () => {
+    let list = new LL() ;
+    list.insert(1);
+    list.insert(3);
+    list.insert(8);
+    list.insert(2);
+
+    expect(list.kthFromEnd(2)).toEqual(3);
+  });
+
+
+  
+
+
+
+
+
+
+
+
+
 
   
 });

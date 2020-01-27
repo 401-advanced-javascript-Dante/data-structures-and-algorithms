@@ -59,3 +59,14 @@ https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/
 white board image :
 ![](assets/linkedlist2.jpg)
 
+
+## Code Challenge: Class 06 - Linked List
+k-th value from the end of a linked list.
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-insertions
+
+white board image :
+![](assets/linkedlist3.JPG)
+
+
