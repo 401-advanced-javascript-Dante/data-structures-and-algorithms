@@ -64,8 +64,7 @@ white board image :
 k-th value from the end of a linked list.
 
 branch link :
-https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-insertions
-
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-kth-from-end
 white board image :
 ![](assets/linkedlist3.JPG)
 
