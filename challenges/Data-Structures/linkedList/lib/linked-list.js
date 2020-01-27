@@ -139,7 +139,7 @@ class LinkedList {
   kthFromEnd(k){
 
     if(k <= 0 ){
-      return 'negative numbers rejected'
+      return 'negative numbers rejected';
     }
 
     let pointer = this.head ;
@@ -153,16 +153,16 @@ class LinkedList {
     
     let target = length - k ;
 
-    console.log('target: ', target);
-    console.log('the list: ', this)
-    console.log('the list: ', this.head)
+    // console.log('target: ', target);
+    // console.log('the list: ', this)
+    // console.log('the list: ', this.head);
 
     let counter = 0 ;
 
     let newPointer = this.head;
     while(newPointer.next){
       newPointer = newPointer.next ;
-      counter++
+      counter++ ;
       if(counter === target){
         return newPointer.name;
       }
