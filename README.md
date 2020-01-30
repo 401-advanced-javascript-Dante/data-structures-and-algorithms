@@ -38,11 +38,48 @@ white board image :
 
 
 
-## Code Challenge: Class 05 - Linkid List
-Fibo & Summing array of arrays
+## Code Challenge: Class 05 - Linked List
+Linked list insertions.
+
 
 branch link :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/linked-list
 
 white board image :
 ![](assets/linkedlist.JPG)
+
+
+## Code Challenge: Class 06 - Linked List
+Linked list insertions.
+
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-insertions
+
+white board image :
+![](assets/linkedlist2.jpg)
+
+
+## Code Challenge: Class 07 - Linked List k-th
+k-th value from the end of a linked list.
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-kth-from-end
+white board image :
+![](assets/linkedlist3.JPG)
+
+
+## Code Challenge: Class 07 - Linked List merge
+Merge two linked lists.
+
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-mergewhite
+
+ board image :
+![](assets/llmerge.JPG)
+
+
+
+
+
