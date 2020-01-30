@@ -60,12 +60,26 @@ white board image :
 ![](assets/linkedlist2.jpg)
 
 
-## Code Challenge: Class 06 - Linked List
+## Code Challenge: Class 07 - Linked List k-th
 k-th value from the end of a linked list.
 
 branch link :
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-kth-from-end
 white board image :
 ![](assets/linkedlist3.JPG)
+
+
+## Code Challenge: Class 07 - Linked List merge
+Merge two linked lists.
+
+
+branch link :
+https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-mergewhite
+
+ board image :
+![](assets/llmerge.JPG)
+
+
+
 
 

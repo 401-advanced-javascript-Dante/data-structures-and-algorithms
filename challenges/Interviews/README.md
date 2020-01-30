@@ -6,12 +6,12 @@ function to find fibo number at spacific index .
 <!-- Description of the challenge -->
 Write a function which takes in an array of arrays and given you array of summation of each array .
 
-Write another one wich take input an integer as index of fibo method , and the output shuld be the correct number at this index .
+Write another one which take input an integer as index of fibo method , and the output should be the correct number at this index .
 
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-i approched a methode that adding the value in the middle of the array without using any built-in methods , i give it the big o space because i find it challenging .
+i approached a method that adding the value in the middle of the array without using any built-in methods , i give it the big o space because i find it challenging .
 
 ## Solution
 <!-- Embedded whiteboard image -->
