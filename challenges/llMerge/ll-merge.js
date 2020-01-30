@@ -14,6 +14,8 @@ class LinkedList {
     this.head = null;
   }
 
+
+
   insert(value) {
     let node = new Node(value);
     if (!this.head) {
@@ -165,38 +167,23 @@ class LinkedList {
 
   mergeLists(list1 , list2 ){
     
+    let list1Pointer = list1.head ;
+    let list2Pointer = list2.head ;
 
-    let firstPointer = list1.head ;
-    let secondPointer = list2.head ;
-    let result = this.head ;
-    let resultPointer ;
- 
-    while(firstPointer && secondPointer){
-      
-      if(result === null){
-        result = new Node(firstPointer.name);
-        result.next = new Node(secondPointer.name);
-        resultPointer = result ;
-        // console.log(resultPointer);
-      }else{
-        resultPointer.next = new Node(firstPointer.name);
-        resultPointer.next.next = new Node(secondPointer.name);
-        // console.log(resultPointer);
-
-      }
-        
-      firstPointer = firstPointer.next ;
-      secondPointer = secondPointer.next ;
-      resultPointer = resultPointer.next ;
+    while(list1Pointer && list2Pointer){
+      this.insert(list1Pointer.name);
+      this.insert(list2Pointer.name);
+      list1Pointer = list1Pointer.next ;
+      list2Pointer = list2Pointer.next ;
     }
-
-    this.head = result;
-    // console.log(JSON.stringify(this));
     return this ;
   }
 
+
 }
 
-
-
 module.exports = LinkedList;
+
+
+
+

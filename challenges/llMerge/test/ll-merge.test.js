@@ -38,19 +38,19 @@ describe('Linked-List' , ()=> {
     expect(mergedList.head.name).toEqual(1);
   });
 
-  //   it('return the right sequence of merged lists' , () => {
-  //     let init = new LL() ;
-  //     let result = init.mergeLists(list1 , list2);
-  //     let values = [] ;
-  //     let pointer = result.head ;
-  //     while(pointer.next){
-  //       values.push(pointer.name);
-  //       pointer = pointer.next ;
-  //     }
-  //     values.push(pointer.name);
+  it('return the right sequence of merged lists' , () => {
+    let init = new LL() ;
+    let result = init.mergeLists(list1 , list2);
+    let values = [] ;
+    let pointer = result.head ;
+    while(pointer.next){
+      values.push(pointer.name);
+      pointer = pointer.next ;
+    }
+    values.push(pointer.name);
 
-  //     expect(values).toEqual([1, 5, 3, 9, 2, 4]);
-  //   });
+    expect(values).toEqual([1, 5, 3, 9, 2, 4]);
+  });
 
 
 
