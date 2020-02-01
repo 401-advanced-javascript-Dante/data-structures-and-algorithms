@@ -27,9 +27,9 @@ adding kthFromEnd() ;
 ### challenge 5 
 ![linked-list1](../../../assets/linkedlist.JPG)
 Big O notation :
-insert() => O(n) , we check once and inserting the value to the end .
-include() => O(n) , same as insert we are going through once to check the value exist or not .
-toString() => O(n) , we go once through it .
+insert() => O(1) , we check once and inserting the value to the end .
+include() => O(1) , same as insert we are going through once to check the value exist or not .
+toString() => O(1) , we go once through it .
 
 
 
@@ -37,10 +37,10 @@ toString() => O(n) , we go once through it .
 ![linked-list2](../../../assets/linkedlist2.jpg)
 
 Big O notation :
-append() => here we can say O(n) because we go through the LL one .
-insertBefore() => because we going once and we stopped when we found the value we want to insert before to here we can say it O(n) but notice that when we want to add after the new value we start from the beginning again so O(n^2) . 
+append() => here we can say O(1) because we go through the LL one .
+insertBefore() => because we going once and we stopped when we found the value we want to insert before to here we can say it O(n) but notice that when we want to add after the new value we start from the beginning again so O(2n) . 
 insertAfter() => we going once and we stopped when we found the value we want to insert after it so here we can say 
-it O(n) .
+it O(1) .
 
 
 
@@ -48,7 +48,7 @@ it O(n) .
 ![linked-list3](../../../assets/linkedlist3.jpg)
 
 Big O notation :
-here i made a counter so i can go through from the head to the tail even if you giving me the position from the end , then i go one through the linked list to get the value , if i don't used the counter here we can say O(n) , but long as i use it it will be O(n^2) .
+here i made a counter so i can go through from the head to the tail even if you giving me the position from the end , then i go one through the linked list to get the value , if i don't used the counter here we can say O(1) , but long as i use it it will be O(2n) .
 
 
 
