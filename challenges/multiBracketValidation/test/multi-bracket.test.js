@@ -33,6 +33,7 @@ describe('Multi Bracket Validation', ()=> {
   });
 
   it('Work with Edge Cases !!' , ()=> {
+    expect(sniper('{(})')).toEqual(false);
     expect(sniper('{')).toEqual(false);
     expect(sniper('[')).toEqual(false);
     expect(sniper(')')).toEqual(false);
