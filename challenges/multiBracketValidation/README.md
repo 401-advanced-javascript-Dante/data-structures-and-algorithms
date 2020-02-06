@@ -12,13 +12,15 @@ Curly Brackets : {}
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-building a function with regular expression to check all brackets and creating three counters , each time found open bracket wee add one to the counter , if we found the close bracket we subtract one , after that if the counter equal zero it return true , else will be false ...
+building a function with regular expression to ignore anything than brackets , starting with pushing open brackets to temporary array until we reach close one we pop last element in the array and check if it the right one for the close bracket , if not return false .
 
 ## Big O notation :
-in the beginning i used 3 maps to loop over the array for each bracket type , then i remember the O(n) , so i used only one loop to go through the array once so O(1) ;
+going through the string once , using a temporary array for checking the top element , i thing
+the big O here going to be O(1) .
 
 ## Solution
 <!-- Embedded whiteboard image -->
+
 
 ![](../../assets/brackets.JPG)
 
