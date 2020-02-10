@@ -1,16 +1,16 @@
 'user strict';
 
 
-const {Node} = require('../tree.js');
-const {BinaryTree} = require('../tree.js');
-const {BinarySearchTree} = require('../tree.js');
+const { Node } = require('../tree.js');
+const { BinaryTree } = require('../tree.js');
+const { BinarySearchTree } = require('../tree.js');
 
-describe('Binary Tree' , () => {
+describe('Binary Tree', () => {
 
-  let tree = null ;
+  let tree = null;
 
   beforeEach(() => {
-          
+
     let a = new Node('a');
     let b = new Node('b');
     let c = new Node('c');
@@ -18,15 +18,15 @@ describe('Binary Tree' , () => {
     let e = new Node('e');
     let f = new Node('f');
     let g = new Node('g');
-    
-    a.left = b ;
-    a.right = e ;
-    b.left = c ;
-    b.right = d ;
-    e.left = f ;
-    e.right = g ; 
-    
-    tree = new BinaryTree(a);  
+
+    a.left = b;
+    a.right = e;
+    b.left = c;
+    b.right = d;
+    e.left = f;
+    e.right = g;
+
+    tree = new BinaryTree(a);
   });
 
 
@@ -44,18 +44,36 @@ describe('Binary Tree' , () => {
 
   });
 
+  it('Can successfully return a collection from an Depth first approach traversal', () => {
+    expect(tree.breadth(tree)).toEqual(['a', 'b', 'e','c', 'd', 'f','g']);  
+  });
+
+  it('Can successfully deal with single node', () => {
+    let node = new Node('a');
+    let rootTree = new BinaryTree(node);
+    expect(tree.breadth(rootTree)).toEqual(['a']);  
+  });
+
+  it('Can successfully deal with it if it empty root', () => {
+    let rootTree = new BinaryTree(null);
+    expect(tree.breadth(rootTree)).toEqual(null);  
+  });
+
+
+
+
 });
 
 describe('BinarySearchTree' , () => {
-    
+
   let test = null ;
   beforeEach(()=> {
     test = new BinarySearchTree();
   });
 
-  
+
   it('Can successfully instantiate an empty tree' , ()=> {
-    
+
     let testTree = test.add(10) ;
     expect(testTree.value).toEqual(10);
   });
@@ -63,7 +81,7 @@ describe('BinarySearchTree' , () => {
   it('Can successfully instantiate a tree with a single root node' , ()=> {
     test.add(10) ;
     let testTree = test.add(2) ;
-    
+
     expect(testTree.left.value).toEqual(2);
   });
 
@@ -72,7 +90,7 @@ describe('BinarySearchTree' , () => {
     test.add(10) ;
     test.add(2) ;
     let testTree = test.add(12) ;
-    
+
     expect(testTree.left.value).toEqual(2);
     expect(testTree.right.value).toEqual(12);
   });
@@ -85,7 +103,7 @@ describe('BinarySearchTree' , () => {
     test.add(12) ;
     test.add(15) ;
     test.add(11) ;
-  
+
     expect(test.contain(15)).toBeTruthy();
     expect(test.contain(5)).toBeFalsy();
   });
