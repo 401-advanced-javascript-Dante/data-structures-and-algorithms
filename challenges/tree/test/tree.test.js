@@ -60,6 +60,40 @@ describe('Binary Tree', () => {
   });
 
 
+  it('findMaxVal() return the maximum value of tree with string nodes', () => {
+    expect(tree.findMaxVal(tree)).toEqual('g');  
+  });
+
+  it('findMaxVal() Can successfully deal with it if it empty root', () => {
+    let rootTree = new BinaryTree(null);
+    expect(tree.findMaxVal(rootTree)).toEqual(null);    });
+
+
+  it('findMaxVal() return the maximum value of tree with numeric nodes', () => {
+
+    let a = new Node(1);
+    let b = new Node(34);
+    let c = new Node(11);
+    let d = new Node(1);
+    let e = new Node(59);
+    let f = new Node(92);
+    let g = new Node(23);
+
+    a.left = b;
+    a.right = e;
+    b.left = c;
+    b.right = d;
+    e.left = f;
+    e.right = g;
+
+    let treeOfNum = new BinaryTree(a);
+
+    expect(tree.findMaxVal(treeOfNum)).toEqual(92);  
+  });
+
+
+
+
 
 
 });

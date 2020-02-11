@@ -92,6 +92,23 @@ class BinaryTree {
 
 
 
+  findMaxVal(tree){
+    console.log('max vaal tree',tree);
+
+    if(tree.root === null){ return null ;}
+    let maxVAl = '';
+
+    let _walk= (node) => {
+      if(node.value > maxVAl){maxVAl = node.value;}
+      if(node.left)_walk(node.left);
+      if(node.right)_walk(node.right);
+    };
+
+    _walk(tree.root);
+    return maxVAl ;
+  }
+
+
 }
 
 
