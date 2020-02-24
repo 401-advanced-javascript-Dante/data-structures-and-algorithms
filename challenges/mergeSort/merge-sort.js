@@ -29,7 +29,7 @@ function mergeSort(arr){
 function merge(left , right , arr){
   console.log('left', left);
   console.log('right', right);
-//   console.log('arr', arr);
+  //   console.log('arr', arr);
   
   let i = 0 ;
   let j = 0 ;
@@ -49,19 +49,15 @@ function merge(left , right , arr){
   console.log('remaining', arr);
 
   if(i === left.length){
-    return arr.concat(right);
+    arr[k]=right[j];
   }else{
     console.log('remaining', arr);
-    return arr.concat(left);
+    arr[k]=left[i];
   }
 
+  return arr ;
 
 
-
-//   if i = left.length
-//   set remaining entries in arr to remaining values in right
-// else
-//   set remaining entries in arr to remaining values in left
 }
 
 
