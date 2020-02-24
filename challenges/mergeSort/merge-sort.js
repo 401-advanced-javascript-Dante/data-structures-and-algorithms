@@ -51,7 +51,7 @@ function merge(left , right , arr){
   if(i === left.length){
     return arr.concat(right);
   }else{
-      console.log('remaining', arr);
+    console.log('remaining', arr);
     return arr.concat(left);
   }
 
