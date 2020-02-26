@@ -21,8 +21,6 @@ function mergeSort(arr){
     return merge(left , right , arr);
 
   }
-//   return;
-//   return arr ;
 }
 
 
@@ -59,6 +57,9 @@ function merge(left , right , arr){
 
 
 }
+
+
+module.exports = mergeSort ;
 
 
 console.log('output',mergeSort([8,4,23,42,16,15]));
