@@ -10,25 +10,16 @@ function mergeSort(arr){
     let mid = Math.floor(length/2) ;
     let left = arr.slice(0 , mid);
     let right = arr.slice(mid);
-    console.log('left', left);
-    console.log('right', right);
-  
-
     mergeSort(left);
     mergeSort(right);
 
-    console.log('aa', arr);
     return merge(left , right , arr);
-
   }
 }
 
 
-function merge(left , right , arr){
-  console.log('left', left);
-  console.log('right', right);
-  //   console.log('arr', arr);
-  
+function merge(left , right , arr){  
+
   let i = 0 ;
   let j = 0 ;
   let k = 0 ;
@@ -37,29 +28,31 @@ function merge(left , right , arr){
 
     if(left[i] <= right[j]){
       arr[k] = left[i];
-      i = i + 1 ; 
+      i ++ ; 
     }else{
       arr[k] = right[j];
-      j = j + 1 ;
+      j ++ ;
     }
-    k = k + 1 ;
+    k ++ ;
   }
-  console.log('remaining', arr);
 
   if(i === left.length){
-    arr[k]=right[j];
+    while(j < right.length){
+      arr[k]=right[j];
+      j ++ ;
+      k ++ ;
+    }
   }else{
-    console.log('remaining', arr);
-    arr[k]=left[i];
+    while(i < left.length){
+      arr[k]=left[i];
+      i ++;
+      k++ ;
+    }
   }
 
   return arr ;
-
-
 }
 
 
+console.log(mergeSort([5,4,3,2,1]));
 module.exports = mergeSort ;
-
-
-console.log('output',mergeSort([8,4,23,42,16,15]));
