@@ -1,5 +1,28 @@
 'use strict';
 
+
+
+// Big O(n)
+
+// function repeated(string){
+//   let arr = string.toLowerCase().split(' ');
+//   let map = {} ;
+
+//   for(let i=0 ; i < arr.length ; i++){
+//     if(map[arr[i]]){
+//       return arr[i];
+//     }else{
+//       map[arr[i]] = arr[i];
+//     }
+//   }
+//   return 'Unique!';
+// }
+// console.log(repeated('hi dante hi dante'));
+
+
+
+
+
 function repeated(string){
 
   let arr = string.toLowerCase().split(' ');
@@ -23,5 +46,4 @@ function repeated(string){
 
 }
 
-// console.log(repeated('HI hi he hi he'));
 module.exports = repeated ;
