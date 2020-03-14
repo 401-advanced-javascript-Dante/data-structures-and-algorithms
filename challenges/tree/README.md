@@ -47,8 +47,6 @@ Space complicity is O(|V|) as well - since at worst case you need to hold all ve
  for findMaxVal() we used preOrder method to go through all nodes it will be O(n) where n is the length of the tree .
 
 
-
-
 ## API
 <!-- Description of each method publicly available in each of your trees -->
 

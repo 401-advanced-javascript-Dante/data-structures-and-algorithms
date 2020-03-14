@@ -76,7 +76,8 @@ class BinaryTree {
     while(temporary.length !== 0){
 
       for(let i = 0 ; i < temporary.length ; i++){
-        
+        console.log('length', temporary.length);
+        console.log('i',i);
         let current = temporary.shift();
         result.push(current.value);
         if(current.left){temporary.push(current.left);}
