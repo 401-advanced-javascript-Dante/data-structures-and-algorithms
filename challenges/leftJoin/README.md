@@ -18,6 +18,7 @@
 - i build leftJoin() function that take two maps and store first map keys in an array and then loop through it ,to check if the other map have the same keys or not , depend on that return the keys and values 
 
 ## Big O notation
+
 - save the keys in an array and loop once to check the repeated keys to add there values give us O(n) where is n is the array length .
 ## WhiteBoard 
 <!-- Embedded whiteboard image -->
