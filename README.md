@@ -63,7 +63,7 @@ white board image :
 ## Code Challenge: Class 07 - Linked List k-th
 k-th value from the end of a linked list.
 
-branch link :
+branch link:
 https://github.com/401-advanced-javascript-Dante/data-structures-and-algorithms/tree/ll-kth-from-end
 white board image :
 ![](assets/linkedlist3.JPG)
